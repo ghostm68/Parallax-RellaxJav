@@ -2,15 +2,14 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100%;
-     background-image: url("glow.gif");
     background: #fff;
     overflow-x: hidden;
 }
 
 .man-image{
-    width: 20%;
+    width: 30%;
     background: url(../Images/glow.gif) no-repeat 50% 50%;
-    height: 22vh;
+    height: 33vh;
     background-size: cover;
     position: absolute;
 }
@@ -32,7 +31,6 @@ html, body{
 }
 
 .content{
-    background-image: url("glow.gif");
     background: #fff;
     height: 100vh;
     width: 100%;
