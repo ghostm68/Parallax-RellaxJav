@@ -15,7 +15,7 @@ html, body{
 }
 
 .parallax{
-    background: url(../Images/Foreground.png) no-repeat 50% 50%;
+    background: url(../Images/Foreground.gif) no-repeat 50% 50%;
     background-size: cover;
     position: absolute;
     width: 100%;
