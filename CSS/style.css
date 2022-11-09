@@ -8,7 +8,7 @@ html, body{
 
 .man-image{
     width: 90%;
-    background: url(../Images/Foreground.png) no-repeat 50% 50%;
+    background: url(../) no-repeat 50% 50%;
     height: 100vh;
     background-size: cover;
     position: absolute;
