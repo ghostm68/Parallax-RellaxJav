@@ -35,8 +35,8 @@ html, body{
     background: url(../Images/Clouds.gif) no-repeat 50% 50%;
     background-size: cover;
     position: absolute;
-    width: 100%;
-    height: 100vh;
+    width: 10%;
+    height: 10vh;
 }
 
 .whitespace{
