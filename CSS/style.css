@@ -8,7 +8,7 @@ html, body{
 
 .man-image{
     width: 60%;
-    background: url(../Images/glow.gif) no-repeat 50% 50%;
+    background: url() no-repeat 50% 50%;
     height: 88vh;
     background-size: cover;
     position: absolute;
