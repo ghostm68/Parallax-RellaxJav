@@ -55,7 +55,7 @@
     <div class="row content-container">
         <div class="col-md-4 text-container">
             <h4>WRITER</h4>
-		  <img width="88" height="108" src="./Images/glow.gif" alt="">
+		  <img width="66" height="88" src="./Images/glow.gif" alt="">
             <p> MUSICIAN & VISUAL ARTIST</p>
             <a href="https://www.wordstar.gq/" class='btn explore-btn'>at work on several projects...</a>
         </div>
@@ -85,5 +85,16 @@
     <script type="text/javascript">
         var rellax = new Rellax('.rellax');
     </script>
+		<script type="text/javascript">
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
 </body>
 </html>
