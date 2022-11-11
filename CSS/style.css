@@ -5,7 +5,12 @@ html, body{
     background: #fff;
     overflow-x: hidden;
 }
-
+.circle{
+  width:108px;
+  height:88px;
+  object-fit:cover;
+  border-radius:50%;
+}
 .man-image{
     width: 60%;
     background: url() no-repeat 50% 50%;
@@ -130,12 +135,7 @@ p{
   width: 100%;
   padding: 20px;
 }
-.circle{
-  width:108px;
-  height:88px;
-  object-fit:cover;
-  border-radius:50%;
-}
+
 <style type="text/css">
 .ath-samsungAndroid {
 	bottom: 1.8em;
