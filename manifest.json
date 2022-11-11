@@ -1,7 +1,7 @@
 {
 "name": "https://www.authorwave.gq/",
 "short_name": "https://www.authorwave.gq/",
-"start_url": "https://www.authorwave.gq/",
+"start_url": "/",
 "background_color": "#FFDCB5",
 "theme_color": "#1E003D",
 "icons": [
