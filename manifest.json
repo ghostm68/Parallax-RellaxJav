@@ -1,0 +1,23 @@
+{
+"name": "https://www.authorwave.gq/",
+"short_name": "https://www.authorwave.gq/",
+"start_url": "https://www.authorwave.gq/",
+"background_color": "#FFDCB5",
+"theme_color": "#1E003D",
+"icons": [
+{
+"src": "img/Clouds.gif",
+"sizes": "512x512",
+"type": "image/gif",
+"purpose": "maskable any"
+},
+{
+"src": "img/Clouds.gif",
+"sizes": "192x192",
+"type": "image/gif",
+"purpose": "maskable any"
+}
+],
+"display": "standalone",
+"orientation":"portrait"
+}
