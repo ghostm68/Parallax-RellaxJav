@@ -130,6 +130,12 @@ p{
   width: 100%;
   padding: 20px;
 }
+.circle{
+  width:108px;
+  height:88px;
+  object-fit:cover;
+  border-radius:50%;
+}
 <style type="text/css">
 .ath-samsungAndroid {
 	bottom: 1.8em;
