@@ -1,344 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
-    <html lang="en">
-	<!--ink city layout 010
- -Created by www.inkrealm.info 
- (based on nyt)
- (inspired by desire 
- and the spirit of innovation)
-    ja: "私の個人情報を販売しない(カリフォルニア州消費者プライバシー法)",
-        en: "Do Not Sell My Info (KKKalifornia)"---> 
- <html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
-  <meta charset=utf-8> <meta name=description content="inkrealm the official site of julio peralta-paulino, writer- musician - visual artist at work on several projects."> <meta name=keywords content="creative  , writing, visual arts,  download, music, poetry, film, unique, band, two skinny girls, tiktok, ello"> <meta http-equiv=x-ua-compatible content="ie=edge"> 
-  <link rel="shortcut icon" href="./Images//favicon.ico" />
-	<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=VT323&display=swap" rel="stylesheet">
-    <link href="./cyberpunk-2077.css" rel="stylesheet"> 
-	  
-	     <!-- ❂  £  ₿ £ 0 ∆元 ∆￦ ∆ 🂶￥  £ 🂶￥
- £ ឯ    0元 ∆￦ ∆ ¢ᶄᶄ ❂ ⎈ ⑱ ♘𝅙 ₪ я 
- ♢ for investment advice : ⚡
-+•1=9=1•7=3•1=0•0=1•1•6• --->
-	    
+<html>
 
-   <head>
-      <meta charset="utf-8"> 
-          <meta name="viewport" content="width=1024">
-      
-<style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>prose</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+<body data-barba="wrapper">
 
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Asap", sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-nav {
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0px 5%;
-  z-index: 1;
-}
-.logo a {
-  font-weight: 700;
-  color: #a6a897;
-  font-size: 2rem;
-}
-nav ul {
-  display: flex;
-}
-nav ul li a {
-  height: 40px;
-  line-height: 43px;
-  margin: 10px;
-  padding: 0px 30px;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #e0ffff;
-  transition: 0.1s;
-}
-nav ul li a:hover,
-.main-text a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  color: #08a68e;
-}
-#main {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.main-text{
-  position: absolute;
-  left: 13%;
-  top: 42%;
-  transform: translate(-13%,-42%);
-  line-height: 0;
-}
-.main-text h2{
-  font-weight: 500;
-  font-size: 30px;
-  color: #e0ffff;
-}
-.main-text h1{
-  font-size: 70px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  color: #08a68e;
-}
-.main-text p{
-  font-size: 20px;
-  color: #e0ffff;
-  margin: 25px 0px 25px;
-  line-height: 50px;
-}
-.main-text a{
-  width: 150px;
-  height: 40px;
-  outline: none;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 200;
-  padding: 1rem;
-}
-.btn{
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #e0ffff;
-  font-family: "Asap", sans-serif;
-}
-#main video{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-image: linear-gradient(to bottom, rgba(34,35,46,0.75) 50%, rgba(34,35,46));
-}
-.slider-btns{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(50px);
-  z-index: 100;
-}
-.slide-btn{
-  width: 10px;
-  height: 10px;
-  background: #e0ffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.slide-btn.active{
-  background: #00c2cb;
-}
-.slide-btn:not(:last-child){
-  margin-right: 20px;
-}
-.slide-btn:hover{
-  transform: scale(1.2);
-}
-.video-bg{
-  position: absolute;
-  width: 100%;
-  clip-path: circle(0% at 0 50%);
-}
-.video-bg.active{
-  clip-path: circle(150% at 0 50%);
-  transition: 1s ease;
-  transition-property: clip-path;
-}
-   {
-  overflow: scroll; /* Show scrollbars */
-}
-img {
-     opacity: 0.3;
-   }
-   
-</style>   </head>
-<script>
-const btns =document.querySelectorAll(".slide-btn");
-    const slider =document.querySelectorAll(".video-bg");
+    <div class="transition-div"></div>
 
-    var slideVideo = function(index) {
-      btns.forEach((btn) => {
-        btn.classList.remove('active');
-      });
-      slider.forEach((slide) => {
-        slide.classList.remove('active');
-      });
-      btns[index].classList.add('active');
-      slider[index].classList.add('active');
-    }
+    <div class="animation-wrapper" data-barba="container" data-barba-namespace="home">
+        <h1> 
+ ON THE OFF CHANCE THAT THE UNKNOWN IS ASTIR  </h1>
+        <a class="btn" href="about.html">thataway</a>
+        ON THE OFF CHANCE THAT THE UNKNOWN IS ASTIR  
+        (a reckoning or two by inky)
+        > I was reading the Graves talk from a Paris Review  interview and it
+>> seems he didn’t much care for Milton. I don’t blame him, I took a
+>> peekaboo at Paradise Lost and Found and couldn’t get into it.
+>>
+>> In any case, Graves says it’s obvious to him that Milton was a hair
+>> freak and unfortunately so constipated  that an awful smell came
+>> through his writing.
+>>
+>> Clearly, not a compliment.
+>>
+>> It brought to mind the rather shocking passage from Hemingway’s A
+>> Moveable Feast. I mean the one in which he brought to light an
+>> arguably private incident between himself and F. Scott Fitzgerald.
+>>
+>> I haven’t yet had such a strong visceral sensation while reading an
+>> author. Dead or alive.
+>>
+>> And I hope not to have need or occasion to hop into some unveiling of
+>> any hush-hush position which I might have been alongside or which I
+>> shall be sharing in the wrong or right of future songs or lights.
+>>
+>> The prelude is a passing thought.
+>>
+>> I didn’t feel near to those scriveners, although I have cultivated a
+>> great appreciation or respect for Fitzgerald, and I can pretty much
+>> postulate that I still don’t.
+>>
+>> What really caught my reality was how real and unexpectedly close mine
+>> own  mythos comes to Graves’ ideology.
+>>
+>> For example, his briefly related  theory that time doesn’t really
+>> exist.  It is an idea that has sweetly distracted my thoughts since I
+>> developed more substantial interests than say what is common to a
+>> schoolboy.
+>>
+>> Of course, I didn’t have occasion to entertain Mr Graves’ philosophy
+>> before browsing that Q&A.
+>>
+>> Read I, Claudius and the second historical novel. I’d seen the
+>> photoplay production and years later read some of his verse.
+>>
+>> And The White Goddess happens to be high on my reading list.
+>>
+>> I thought to think back through writers that have made me feel
+>> something, something beyond concept or sentiment. Those are common,
+>> even among the so-called hacks and hounds that pretend to be scribes.
+>>
+>>
+>> Tolkien and Steinbeck were early inspirations. Wonder and empathy,
+>> respectively came through their work. Dickinson and Cummings came a
+>> little later. Admiration and perhaps envy, filtered into my senses.
+>>
+>> However, it is difficult to detail the exact emotions because it was
+>> during a time when I was also learning about the so-called birds and
+>> the bees.
+>>
+>> Biographies perked my interest but it wasn’t until I picked up Beat
+>> Generation writers that I realized how wide open, how wonderful, how
+>> wise  the world of literature could be.
+>>
+>> Equally, philosophy -with its sometimes poisoned delusion that tries
+>> to position an exact definition of an abstraction until it is drowned
+>> past logic with so many words and references– raised my curiosity but
+>> I trust that I am not alone in stating that the eloquent simplicity of
+>> the Eastern School of thought pretty much says it all.  Nietzsche
+>> might be poetic, but Lao Tse is a poem. One’s pretentious. The other’s
+>> without pomp.
+>>
+>> I write it without hesitation, although it seems that any sensible
+>> argument for the construct of karma or for that matter spiritual
+>> consequence is entirely devoid of reason.  I should add that I hope I
+>> am wrong for I have my faith and after all this who wouldn’t want some
+>> type of heaven…
+>> The obvious response, if we may take a minute for frivolity, is the
+>> nonbeliever…‘I am an atheist, thank G-d’, someone quipped.
+>>
+>> In any case, there are several or perhaps more than several books and
+>> certainly poems which I could point to as containing a type of
+>> greatness which seduces as if the perfect lover were holding your hand
+>> and whispering in your ear that love is true.
+>>
+>> For example, Master and Margarita, The Drunken Boat, The Pisan Cantos,
+>>  Night, and to make a long list particularly abbreviated, the
+>> overwhelming and impossible creation that is Finnegan’s Wake.
+>>
+>>Recently, to return to the subject as it were, when I read the first
+>> section of Anne Rice’s recent historical novel about Jesus, I felt the
+>> presence of a child.  When I read Norman Mailer’s first chapter of
+>> Castle In The Forest, I felt an uneasy curiosity which could possibly
+>> be defined within some spiritual realm.
+>>
+>>  I don’t think one is either capable or open enough to get any feeling
+>> from too many writers. Of course, it is an arguable point that there
+>> are -at any given time– very few writers capable of offering a real
+>> sensation, a daring sentiment which makes the reader feel what should
+>> be termed ethereal.
+>>
+>> All this without taking into account articles, essays, The Bible, and
+>> Shakespeare, and  especially screenplays…
+>>
+>> In the interview, he contradicts himself a bit.  It is a tender irony
+>> that one would have to sleep on or contemplate further after reading,
+>> at least if one is -alike myself– entirely engaged in the text instead
+>> of evaluating the exact signification.
+>>
+>> If memory serves, he implies that poets “move” from one muse to
+>> another as a matter of consequence or simple harvesting of aliveness…
+>> The changes which lead to experience…
+>>
+>> That is, on one side. On the other, he suggests, that it is wayward
+>> for a maker of verse to be wanton.
+>>
+>> The implication and the suggestion seem -at least to yours truly– to
+>> resist each other on several levels.
+>>
+>> One could see it as the eternal conflict between flesh and
+>> spirituality, given the premise that there is a  dispute amid sex and
+>> faith.
+>>
+>>
+>>
+>> Is there?
+>>
+>> My own lingering thought and limited experience tells me there is. Of
+>> course, in any possible reality or any realness that is within reach,
+>> there doesn’t have to be any feud.
+>>
+>> It is simply a matter of view point. We have allowed sexuality to be
+>> categorized, catalogued, and controlled by church and state.  A rather
+>> unfortunate situation for humanity, a group that by and large is at
+>> its best when breeding (if this is not a clear point, simply consider
+>> the obvious; no offspring equals no future.)
+>>
+>> I propose a, if we may take another minute for folly, a sex Olympics.
+>> My apologies to the homosexuals and anchorites, for indeed the purpose
+>> would be pregnancy and birth.
+>>
+>>
+>>
+>> It could be, within our advancing medical knowledge, done as
+>> non-contact sport, but someone would need to restrain the
+>> Mediterranean and Tropical participants.
+>>
+>> Might as well do it the old-fashioned way.
+>>
+>> I digress.
+>>
+>>  And to conclude, as if this were anywhere near an essay, I am most
+>> certainly a hair freak. Luckily I never did eat enough to be truly
+>> constipated.
+>>
+>> If my writing smells, I hope it is the odor of Clove cigarettes,
+>> coffee,  the city I happen to inhabit, or that it has been published
+>> by a scratch and sniff magazine.
+>>
+>> No matter, the resolve resides in the reader’s interpretation, what
+>> Nabokov claimed to be most important: the individual reader.
+>>
+>>
+>>
+>> Sometimes, the reader is my self.
+>>
+>> Sometimes, it is another.
+>>
+>> All the work under the wild wisdom which is understandably muse, which
+>> is undeniably woman.
+>>
+>> How lucky am I to have found a kindred spirit in Robert Graves? Excuse
+>> my quasi–rebuke in the passing thought prelude, it’s just that even
+>> kindred spirits might find reasons for dancing on the ground of
+>> disagreement.
+>>
+>> Of course, I am not so determinedly stubborn – despite my sometimes
+>> narrow reckoning – to admit that there could have been some other
+>> meaning in his seemingly whimsical evaluation of Milton.
+>>
+>>
+>>
+>>
+>>
+>> Be that as it may, I am away to pen for the muse, to pine for the
+>> higher music of love and learning, to waylay the weighty sorrows with
+>> page-turning prose and tingling poetry.
+        <br>
+        www.inkrealm.info
+    </div>
 
-    btns.forEach((btn,i) => {
-      btn.addEventListener('click', () => {
-        slideVideo(i);
-      })
-    })
-</script>
-  <section id="main">
-    <nav>
-      <div class="logo">
-        <a href="https://www.inkrealm.info">www.inkrealm.info</a>
-      </div>
-      <!--Navigation-->
-      <ul class="menu">
-        <li><a href="https://wordstar.gq">wordstar</a></li>
-        <li><a href="https://inkrealm.cloud/">cloud</a></li>
-        <li><a href="https://www.inkrealm.info/amsr">amsr</a></li>
-      </ul>
-    </nav>
-    <video class="video-bg active" src="https://github.com/ghostm68/inktwo/raw/main/inkrealmvwalkencraig.mp4" muted autoplay loop></video>
-    <video class="video-bg" src="https://github.com/ghostm68/666/raw/6a3dfe7b2b50d9c7c2ecf0a5d336c5d1d7e0c4b5/inkrealmLHeditDL_1673468740386.mp4" muted autoplay loop></video>
-    <video class="video-bg" src="https://github.com/ghostm68/inktwo/raw/main/inklondon_1672028824425.mp4" muted autoplay loop></video>
-<video class="video-bg" src="https://github.com/ghostm68/666/raw/main/inkrealm1670269955703.mp4" muted autoplay loop></video>
-    <div class="overlay"></div>
-    <div class="main-text">
-<h1 class="cyberpunk glitched">
-      <h2>2$k...</h2><br>
-      
-<br>
-<audio controls>
-    <source src="https://github.com/ghostm68/inktwo/raw/main/orgasm.mp3" type="audio/mpeg">
-    Sorry, your browser doesn't support HTML5 audio.
-  </audio><br>
-      <p>orgasm</p>
-
-      <a href="https://wordstar.gq/9512623062" class="btn"> hi, there...spritz now @ wordstar.gq/9512623062</a><br>
-	     
-	<h1>
-	     <a href="http://w5um6btvygqhocldcny3gaogqkhko4ez4snpj5ebp4jp3vkulvisktqd.onion" class="btn"> <img width="288" height="108" src="./VYtfP.png"><br>
-	   NMU? tor req'd + auth req'd, email to get through...
-		only available when we are online  
-	</a></h1>
-      <div class="slider-btns"><font color="yellow">
-        <div class="slide-btn"> __</div> <br></font color="white">
-      
-	       <img width="188" src="https://raw.githubusercontent.com/ghostm68/inktwo/main/tmwfte.gif">
-<b><font color="white">
-<p>Jan 14, 1973..  <br>
-  
-			
- 
-<a href="https://www.inkrealm.cloud/" rel="noopener noreferrer" target="_blank">info</a><br>
-                              <a href="mailto:inkrealm@inkrealm.info" rel="noopener noreferrer" target="_blank">electromail</a><br>
-                              <a href="https://inkrealms.wordpress.com/" rel="noopener noreferrer" target="_blank">cave</a><br>
-                              <a href="https://www.wordstar.gq/" rel="noopener noreferrer" target="_blank">wordstar</a><br>
-                           <br>
-                                  </b><br></font color="white">
-    
-
-                       <aside class="cyberpunk">
-      <ul><h1 class="cyberpunk glitched">
-         <a href="tel:+16468019713">&#xC6D0; 연락하다</a></br>
-         <a href="https://ko-fi.com/inkrealm">&#x2658; Contact us</a></br>
-       <a href="https://inkrealm.instatus.com/">&#x2602; stat</a></br>
-      </ul>
-	   <p class="cyberpunk inverse scannedv">  writer - musician - visual artist...</p>
-	    <p class="cyberpunk inverse dotted scannedh"> reluctant website designer</p></h1>
-	  
-	  <br>
-	  <br>
-	 <ul>
-		 
-	  <div class="nav-container"><ul class="navbar-nav"><li class="nav-item"><a href="https://www.wordstar.gq/" class="nav-link">
-88
-</a></li><li class="nav-item"><a href="https://www.wordstar.gq/88" class="nav-link">
-w
-</a></li><li class="nav-item"><a href="https://www.inkrealm.info/amsr" class="nav-link">
-amsr
-</a></li><li class="nav-item"><a href="https://authorwave.gq" class="nav-link">
-onion
-</a></li> <li class="nav-item"><a href="https://www.inkrealm.info/1991" exact="" class="nav-link">
-1991
-</a></li></ul></div> <div class="nav-container-hider"><div class="menu-overlay-noise"></div></div> <div class="menu-contact default-layout highlight-dark"><div class="contact-fade"></div> <div class="contact-container container p-relative"><div class="row"><div class="col-12 col-md-10 col-lg-12"><div class="row no-pad"><div class="col-lg-5 my-auto"><div class="contact-intro"><h2 class="contact-title col-6 col-sm-5 col-md-8 col-lg-12">
-
-<b><font color="brown">
-</h2></div></div></div></div> <div class="col-12 col-md-10 col-lg-12"><div class="row no-pad"><div class="col-lg-6"><p class="contact-subtitle col-8 col-sm-5 col-md-12 col-lg-7 col-xl-12 text-uppercase font-weight-bold"><p class="title text-black">
-worldwide: further links + more @ wordstar.gq
-</p> <div class="row contact-addresses no-pad"><div class="col-sm-7"><div class="contact-address1"><p class="lead">
-<p class="title text-black">Head Office in-side...
-</p>   <div class="col-sm-5"><div class="contact-address2"><p class="lead"><p class="title text-black">
-send coin to t1apfk9oXBqqigAFkViPU2zhDYBJPHWp9uG <img width="188" src="https://z.cash/wp-content/uploads/2021/01/The-GIF-012021.gif">
-</p>     <address class="address3">_<br>
-#3k
-</address></div></div></div></div></div> <div class="col-lg-6"><div class="contact-options"><div class="contact-form"><p class="title text-black">
-...The heron is homing, the plover is still,
-The night-owl calls from his haunt on the hill,
-Afar the fox barks, afar the stars peep,—
-Little brown baby of mine, go to sleep."
-</p>   <small>
-This site is protected by witches.<br>
-
-<a href="https://policies.google.com/privacy" class="underlined-link">Privacy Policy</a> 
-		 <div class="rellax content" data-rellax-speed="5">
-    <div class="row content-container">
-        <div class="col-md-4 text-container">
-            <h4>WRITER</h4>
-		  <img src="./Images/glow.gif" class="circle" />
-		<p> MUSICIAN & VISUAL ARTIST</p>
-		<li>   <a href="http://w5um6btvygqhocldcny3gaogqkhko4ez4snpj5ebp4jp3vkulvisktqd.onion"><img width="210" height="108" src="./VYtfP.png"></a></li>
-		<li> NMU? tor req'd + auth req'd, email to get through...</li>
-		<li>only available when we are online</li>
-		<li> also @  authorwave.onrender.com & inkrealm--78088636416076.stormkit.dev/ </li>
- 
-        <div class="col-md-8 img-container">
-            <div class="row">
-                
-          
-            <p>magus baiza @kindle... </p>
-  <a href="https://www.amazon.com/-/en/Ink-Realm-ebook/dp/B0BSSGXNDR?ref_=ast_author_mpb&language=zh_CN">
- 
- <img height="166" width="166" src="https://www.inkrealm.cloud/Adobe_20230107_150406.jpg">
-</a>
-<a href="https://policies.google.com/terms" class="underlined-link">Terms of Service</a> 
-</small></form></span> </div></div></div></div></div></div> <div class="contact-footer"><p class="brands text-darkgrey2"><a href="https://www.amazon.com/Ink-Realm-ebook/dp/B0BSSGXNDR" aria-label="Facebook" target="_blank" rel="noopener noreferrer" class="logo ml-3 opacity-100 hover:opacity-10"><picture class="global-webImage"> <source srcset="" type="image/jpeg"> <img alt="" src="https://s1-2021.s3.eu-west-2.amazonaws.com/facebook_9a4237731f.svg" loading="lazy" sizes="100vw" class="global-webImage__image brand"></picture> <span class="sr-only">
-magusbook
-		 </span></a> </p></ul>
-<b><font color="brown"></div></div></div></div></div></div> 
-   
-                              
-                           
-     
- 
-
-
-
-
-
-
-    <script src="rellax.min.js"></script>
-    <script type="text/javascript">
-        var rellax = new Rellax('.rellax');
-    </script>
- Onion-Location meta tag test.	
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
